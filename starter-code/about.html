@@ -4,59 +4,322 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Public+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Frontend Mentor | PayAPI Website Challenge</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="script.js" defer></script>
   </head>
 
-  <body>
-    Pricing
-    About
-    Contact
-    Schedule a Demo
-
-    We empower innovators by delivering access to the financial system
-
-    Our Vision
-
-    Our main goal is to build beautiful consumer experiences along with developer-friendly 
-    infrastructure. The result is an intelligent tool that gives everyone the ability to create 
-    amazing products that solve big problems. We are deeply focused on democratizing financial 
-    services through technology.
-
-    Our Business
-
-    At the core of our platform is the technical infrastructure APIs that connect consumers. 
-    Our innovative product provides key insights for businesses and individuals, as well as 
-    robust reporting for traditional financial institutions and developers.
-
-    Team Members 
-    300+
-
-    Offices in the US 
-    3
-
-    Transactions analyzed 
-    10M+
-
-    The Culture
-
-    We strongly believe there's always an opportunity to learn from each other outside of 
-    day-to-day work, whether it's company-wide offsites, internal hackathons, or co-worker meetups. 
-    We always value cross-team collaboration and diversity of thought, no matter the job title.
-
-    The People
-    
-    We're all passionate about building a more efficient and inclusive financial infrastructure 
-    together. At PayAPI, we have diverse backgrounds and skills.
-
-    Ready to start? 
-    Enter email address 
-    Schedule a Demo
-
-    Pricing
-    About
-    Contact
+  <body
+    class="bg-creamy min-h-screen overflow-x-hidden mid:relative font-sans font-400"
+  >
+    <div>
+      <header class="relative">
+        <div
+          class="flex items-center gap-28 max-w-144 mx-auto px-24 mid:px-16 xsma:px-8 mlag:px-16 mid:justify-between sma:px-10 z-3 relative pb-36 pt-16"
+        >
+          <a href="index.html">
+            <img src="assets/shared/desktop/logo.svg" alt="logo" />
+          </a>
+          <nav
+            class="w-full z-10 mid:fixed mid:bg-mirage-blue mid:top-0 mid:h-screen mid:right-0 mid:z-2 mid:w-3/4 mid:flex-col mid:items-end mid:py-4.5rem mid:px-12 mid:flex main-nav mid:translate-x-full mid:opacity-0 mid:invisible transition-all duration-500"
+          >
+            <img
+              src="assets/shared/mobile/close.svg"
+              alt="close"
+              class="hidden mid:block mid:pb-8 nav-close"
+            />
+            <ul
+              class="flex items-center gap-16 mid:flex-col mid:border-t mid:border-link-water-white mid:border-opacity-20 mid:w-full mid:pt-8"
+            >
+              <li>
+                <a
+                  href="pricing.html"
+                  class="block text-1.5rem text-sax-juan-blue opacity-70 leading-norm font-700 hover:opacity-100 transition-all duration-300 mid:text-link-water-white"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="block text-1.5rem text-sax-juan-blue opacity-70 leading-norm font-700 hover:opacity-100 transition-all duration-300 mid:text-link-water-white"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="block text-1.5rem text-sax-juan-blue opacity-70 leading-norm font-700 hover:opacity-100 transition-all duration-300 mid:text-link-water-white"
+                  >Contact</a
+                >
+              </li>
+              <li class="ml-auto mid:ml-0">
+                <a
+                  href="#"
+                  class="py-6 px-11 bg-dark-pink rounded-2.4rem block text-1.5rem text-link-water-white leading-norm font-700 hover:bg-charm-pink transition-all duration-300"
+                  >Schedule a Demo</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <img
+            src="assets/shared/mobile/menu.svg"
+            alt="menu"
+            class="hidden mid:block nav-open"
+          />
+        </div>
+        <img
+          src="assets/shared/desktop/bg-pattern-circle.svg"
+          alt="circle"
+          class="absolute -top-56rem -right-64 lag:-right-30rem slag:-right-50rem slag:-top-50rem mid:-top-40rem sma:-right-40rem xsma:-right-96 xsma:-top-35rem xsm:-top-96"
+        />
+      </header>
+      <main>
+        <section
+          class="max-w-144 mx-auto px-60 flex flex-col gap-24 pb-40 lag:px-24 mlag:px-16 mlag:items-center sma:gap-16 sma:px-10"
+        >
+          <h2
+            class="text-sax-juan-blue font-serif text-5.6rem leading-5.6rem -tracking-0.0431rem max-w-6xl mlag:text-center mlag:text-4.8rem sma:text-3.2rem sma:leading-3.6rem sma:pb-0"
+          >
+            We empower innovators by delivering access to the financial system
+          </h2>
+          <div class="flex flex-col gap-24 slag:gap-20">
+            <div
+              class="items-center gap-12 grid grid-cols-custom mlag:gap-0 slag:grid-cols-1 slag:justify-items-center slag:gap-4 slag:text-center"
+            >
+              <h3
+                class="text-sax-juan-blue text-3.2rem leading-4rem -tracking-0.0246rem sma:text-2.4rem sma:leading-3.2rem sma:-tracking-0.0185rem"
+              >
+                Our Vision
+              </h3>
+              <p class="text-light-san-juan-blue text-1.5rem leading-2.8rem">
+                Our main goal is to build beautiful consumer experiences along
+                with developer-friendly infrastructure. The result is an
+                intelligent tool that gives everyone the ability to create
+                amazing products that solve big problems. We are deeply focused
+                on democratizing financial services through technology.
+              </p>
+            </div>
+            <div
+              class="items-center gap-12 grid grid-cols-custom mlag:gap-0 slag:grid-cols-1 slag:justify-items-center slag:gap-4 slag:text-center"
+            >
+              <h3
+                class="text-sax-juan-blue text-3.2rem leading-4rem -tracking-0.0246rem sma:text-2.4rem sma:leading-3.2rem sma:-tracking-0.0185rem"
+              >
+                Our Business
+              </h3>
+              <p class="text-light-san-juan-blue text-1.5rem leading-2.8rem">
+                At the core of our platform is the technical infrastructure APIs
+                that connect consumers. Our innovative product provides key
+                insights for businesses and individuals, as well as robust
+                reporting for traditional financial institutions and developers.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="relative pb-24 sma:pb-16">
+          <div>
+            <picture>
+              <source
+                media="(max-width: 600px)"
+                srcset="assets/about/mobile/image-team-members.jpg"
+                class="w-full"
+              />
+              <source
+                media="(max-width: 900px)"
+                srcset="assets/about/tablet/image-team-members.jpg"
+                class="w-full"
+              />
+              <img
+                src="assets/about/desktop/image-team-members.jpg"
+                alt="Members"
+                class="w-full"
+              />
+            </picture>
+          </div>
+          <img
+            src="assets/shared/desktop/bg-pattern-circle.svg"
+            alt="circle"
+            class="absolute -top-48 -left-50rem -z-1 xxlg:hidden"
+          />
+        </section>
+        <section
+          class="max-w-144 mx-auto px-24 flex flex-col gap-28 pb-44 mlag:px-16 sma:px-10 sma:gap-20"
+        >
+          <div class="grid grid-cols-3 gap-12 mid:grid-cols-1 mid:text-center">
+            <div
+              class="flex flex-col py-6 border-y border-sax-juan-blue border-opacity-25 mid:border-b-0"
+            >
+              <p
+                class="text-sax-juan-blue text-1.6rem leading-2.8rem opacity-70"
+              >
+                Team Members
+              </p>
+              <p
+                class="text-dark-pink font-serif text-5.6rem leading-7.2rem -tracking-0.0431rem"
+              >
+                300+
+              </p>
+            </div>
+            <div
+              class="flex flex-col py-6 border-y border-sax-juan-blue border-opacity-25 mid:border-y-0"
+            >
+              <p
+                class="text-sax-juan-blue text-1.6rem leading-2.8rem opacity-70"
+              >
+                Offices in the US
+              </p>
+              <p
+                class="text-dark-pink font-serif text-5.6rem leading-7.2rem -tracking-0.0431rem"
+              >
+                3
+              </p>
+            </div>
+            <div
+              class="flex flex-col py-6 border-y border-sax-juan-blue border-opacity-25 mid:border-t-0"
+            >
+              <p
+                class="text-sax-juan-blue text-1.6rem leading-2.8rem opacity-70"
+              >
+                Transactions analyzed
+              </p>
+              <p
+                class="text-dark-pink font-serif text-5.6rem leading-7.2rem -tracking-0.0431rem"
+              >
+                10M+
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col gap-24 px-60 lag:px-24 mlag:px-0 sma:gap-20"
+          >
+            <div
+              class="grid grid-cols-custom gap-12 slag:grid-cols-1 slag:justify-items-center slag:gap-4 slag:text-center"
+            >
+              <h3
+                class="text-sax-juan-blue font-serif text-3.2rem leading-4rem -tracking-0.0246rem sma:text-2.4rem sma:leading-3.2rem sma:-tracking-0.0185rem"
+              >
+                The Culture
+              </h3>
+              <p class="text-light-san-juan-blue text-1.5rem leading-2.8rem">
+                We strongly believe there's always an opportunity to learn from
+                each other outside of day-to-day work, whether it's company-wide
+                offsites, internal hackathons, or co-worker meetups. We always
+                value cross-team collaboration and diversity of thought, no
+                matter the job title.
+              </p>
+            </div>
+            <div
+              class="grid grid-cols-custom gap-12 slag:grid-cols-1 slag:justify-items-center slag:gap-4 slag:text-center"
+            >
+              <h3
+                class="text-sax-juan-blue font-serif text-3.2rem leading-4rem -tracking-0.0246rem sma:text-2.4rem sma:leading-3.2rem sma:-tracking-0.0185rem"
+              >
+                The People
+              </h3>
+              <p class="text-light-san-juan-blue text-1.5rem leading-2.8rem">
+                We're all passionate about building a more efficient and
+                inclusive financial infrastructure together. At PayAPI, we have
+                diverse backgrounds and skills.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section
+          class="max-w-144 mx-auto flex items-center justify-between px-24 mid:px-16 xsma:px-8 pb-40 lag:flex-col lag:gap-16 mlag:px-16 sma:pb-32 sma:px-10"
+        >
+          <h2
+            class="text-sax-juan-blue font-serif text-4.8rem leading-5.6rem -tracking-0.0369rem sma:text-3.2rem sma:leading-3.6rem sma:-tracking-0.0246rem"
+          >
+            Ready to start?
+          </h2>
+          <div
+            class="flex items-center bg-white w-44rem rounded-2.4rem overflow-hidden shadow-def sma:flex-col sma:bg-transparent sma:shadow-none sma:gap-7 sma:w-full"
+          >
+            <input
+              type="email"
+              placeholder="Enter email address"
+              class="py-6 px-11 w-59% border-none outline-none text-1.5rem placeholder:text-1.5rem sma:w-full sma:rounded-2.4rem sma:shadow-def"
+            />
+            <a
+              href="#"
+              class="py-6 px-11 bg-dark-pink rounded-2.4rem block text-1.5rem text-link-water-white leading-norm font-700 hover:bg-charm-pink transition-all duration-300 sma:w-full sma:text-center"
+              >Schedule a Demo</a
+            >
+          </div>
+        </section>
+      </main>
+      <footer class="bg-mirage-blue">
+        <header class="py-12 px-24 mid:px-16 xsma:px-8 mlag:px-16 sma:px-10">
+          <div
+            class="flex items-center max-w-144 mx-auto px-24 mid:px-16 xsma:px-8 mlag:px-16 mid:flex-col mid:gap-16 sma:px-10"
+          >
+            <svg class="fill-link-water-white w-80 h-16 mid:pl-8">
+              <use xlink:href="assets/shared/desktop/logo.svg#logo"></use>
+            </svg>
+            <nav class="">
+              <ul class="flex items-center gap-16 mid:flex-col">
+                <li>
+                  <a
+                    href="#"
+                    class="block text-1.5rem text-link-water-white opacity-70 leading-norm font-700 hover:opacity-100 transition-all duration-300"
+                    >Pricing</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block text-1.5rem text-link-water-white opacity-70 leading-norm font-700 hover:opacity-100 transition-all duration-300"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block text-1.5rem text-link-water-white opacity-70 leading-norm font-700 hover:opacity-100 transition-all duration-300"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div class="flex items-center gap-7 ml-auto mid:ml-0">
+              <svg
+                class="fill-link-water-white w-10 h-10 hover:fill-charm-pink transition-all duration-300 cursor-pointer"
+              >
+                <use
+                  xlink:href="assets/shared/desktop/facebook.svg#facebook"
+                ></use>
+              </svg>
+              <svg
+                class="fill-link-water-white w-10 h-8 hover:fill-charm-pink transition-all duration-300 cursor-pointer"
+              >
+                <use
+                  xlink:href="assets/shared/desktop/twitter.svg#twitter"
+                ></use>
+              </svg>
+              <svg
+                class="fill-link-water-white w-10 h-10 hover:fill-charm-pink transition-all duration-300 cursor-pointer"
+              >
+                <use
+                  xlink:href="assets/shared/desktop/linkedin.svg#linkedin"
+                ></use>
+              </svg>
+            </div>
+          </div>
+        </header>
+      </footer>
+    </div>
   </body>
-
 </html>

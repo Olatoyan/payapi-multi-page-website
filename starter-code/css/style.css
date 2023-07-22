@@ -546,6 +546,10 @@ video {
   left: -30rem;
 }
 
+.-left-50rem {
+  left: -50rem;
+}
+
 .-right-20 {
   right: -5rem;
 }
@@ -566,6 +570,10 @@ video {
   top: -10rem;
 }
 
+.-top-48 {
+  top: -12rem;
+}
+
 .-top-56rem {
   top: -56rem;
 }
@@ -584,10 +592,6 @@ video {
 
 .z-10 {
   z-index: 10;
-}
-
-.z-2 {
-  z-index: 2;
 }
 
 .z-3 {
@@ -715,6 +719,10 @@ video {
   max-width: 144rem;
 }
 
+.max-w-6xl {
+  max-width: 72rem;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -725,6 +733,10 @@ video {
 
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-custom {
+  grid-template-columns: 26rem 1fr;
 }
 
 .flex-col {
@@ -765,6 +777,10 @@ video {
 
 .gap-16 {
   gap: 4rem;
+}
+
+.gap-24 {
+  gap: 6rem;
 }
 
 .gap-28 {
@@ -896,6 +912,11 @@ video {
   padding-right: 6rem;
 }
 
+.px-60 {
+  padding-left: 15rem;
+  padding-right: 15rem;
+}
+
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -916,6 +937,10 @@ video {
   padding-bottom: 2.25rem;
 }
 
+.pb-24 {
+  padding-bottom: 6rem;
+}
+
 .pb-3 {
   padding-bottom: 0.75rem;
 }
@@ -926,6 +951,10 @@ video {
 
 .pb-40 {
   padding-bottom: 10rem;
+}
+
+.pb-44 {
+  padding-bottom: 11rem;
 }
 
 .pb-6 {
@@ -1154,6 +1183,10 @@ html {
   .xxlg\:-right-48 {
     right: -12rem;
   }
+
+  .xxlg\:hidden {
+    display: none;
+  }
 }
 
 @media (max-width: 76.25em) {
@@ -1231,6 +1264,11 @@ html {
     gap: 4rem;
   }
 
+  .lag\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
   .lag\:pb-28 {
     padding-bottom: 7rem;
   }
@@ -1257,8 +1295,16 @@ html {
     right: 6rem;
   }
 
+  .mlag\:items-center {
+    align-items: center;
+  }
+
   .mlag\:gap-5 {
     gap: 1.25rem;
+  }
+
+  .mlag\:gap-0 {
+    gap: 0px;
   }
 
   .mlag\:self-center {
@@ -1273,6 +1319,11 @@ html {
   .mlag\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+
+  .mlag\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .mlag\:text-center {
@@ -1341,12 +1392,28 @@ html {
     align-items: center;
   }
 
+  .slag\:justify-items-center {
+    justify-items: center;
+  }
+
   .slag\:gap-20 {
     gap: 5rem;
   }
 
+  .slag\:gap-4 {
+    gap: 1rem;
+  }
+
   .slag\:pb-32 {
     padding-bottom: 8rem;
+  }
+
+  .slag\:text-center {
+    text-align: center;
+  }
+
+  .slag\:text-4\.8rem {
+    font-size: 4.8rem;
   }
 }
 
@@ -1416,6 +1483,10 @@ html {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .mid\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
   .mid\:flex-col {
     flex-direction: column;
   }
@@ -1428,12 +1499,29 @@ html {
     justify-content: space-between;
   }
 
+  .mid\:justify-items-center {
+    justify-items: center;
+  }
+
   .mid\:gap-16 {
     gap: 4rem;
   }
 
+  .mid\:border-y-0 {
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+  }
+
   .mid\:border-t {
     border-top-width: 1px;
+  }
+
+  .mid\:border-b-0 {
+    border-bottom-width: 0px;
+  }
+
+  .mid\:border-t-0 {
+    border-top-width: 0px;
   }
 
   .mid\:border-link-water-white {
@@ -1485,6 +1573,10 @@ html {
 
   .mid\:pt-8 {
     padding-top: 2rem;
+  }
+
+  .mid\:text-center {
+    text-align: center;
   }
 
   .mid\:leading-3 {
@@ -1542,6 +1634,14 @@ html {
     gap: 1.75rem;
   }
 
+  .sma\:gap-16 {
+    gap: 4rem;
+  }
+
+  .sma\:gap-20 {
+    gap: 5rem;
+  }
+
   .sma\:rounded-2\.4rem {
     border-radius: 2.4rem;
   }
@@ -1567,6 +1667,14 @@ html {
     padding-top: 4rem;
   }
 
+  .sma\:pb-16 {
+    padding-bottom: 4rem;
+  }
+
+  .sma\:pb-0 {
+    padding-bottom: 0px;
+  }
+
   .sma\:text-center {
     text-align: center;
   }
@@ -1579,6 +1687,10 @@ html {
     font-size: 3.6rem;
   }
 
+  .sma\:text-2\.4rem {
+    font-size: 2.4rem;
+  }
+
   .sma\:leading-3 {
     line-height: .75rem;
   }
@@ -1587,12 +1699,20 @@ html {
     line-height: 3.6rem;
   }
 
+  .sma\:leading-3\.2rem {
+    line-height: 3.2rem;
+  }
+
   .sma\:-tracking-0\.0246rem {
     letter-spacing: -0.0246rem;
   }
 
   .sma\:-tracking-0\.0277rem {
     letter-spacing: -0.0277rem;
+  }
+
+  .sma\:-tracking-0\.0185rem {
+    letter-spacing: -0.0185rem;
   }
 
   .sma\:shadow-def {

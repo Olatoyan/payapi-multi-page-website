@@ -100,6 +100,9 @@ module.exports = {
       boxShadow: {
         def: "1rem 1rem 2.5rem -1rem rgba(54, 83, 107, 0.25)",
       },
+      gridTemplateColumns: {
+        custom: "26rem 1fr",
+      },
     },
   },
   plugins: [],
