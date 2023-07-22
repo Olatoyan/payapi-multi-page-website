@@ -19,11 +19,13 @@ module.exports = {
         "charm-pink": "#DA6D97",
         "light-san-juan-blue": "#6C8294",
         creamy: "#edf3f8",
+        red: "#f00",
       },
       maxWidth: {
         144: "144rem",
       },
       fontSize: {
+        "1.1rem": "1.1rem",
         "1.5rem": "1.5rem",
         "1.6rem": "1.6rem",
         "1.8rem": "1.8rem",
