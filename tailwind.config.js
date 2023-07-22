@@ -54,6 +54,7 @@ module.exports = {
         "-0.0185rem": "-0.0185rem",
         "-0.0431rem": "-0.0431rem",
         "-0.0277rem": "-0.0277rem",
+        "-0.0431rem": "-0.0431rem",
       },
       borderRadius: {
         "2.4rem": "2.4rem",
@@ -73,7 +74,9 @@ module.exports = {
         "35rem": "35rem",
         "40rem": "40rem",
         "45rem": "45rem",
+        "50rem": "50rem",
         "52rem": "52rem",
+        "56rem": "56rem",
         "70rem": "70rem",
       },
       zIndex: {
@@ -92,6 +95,7 @@ module.exports = {
         mid: { max: "43.75em" },
         sma: { max: "37.5em" },
         xsma: { max: "31.25em" },
+        xsm: { max: "28.75em" },
       },
       boxShadow: {
         def: "1rem 1rem 2.5rem -1rem rgba(54, 83, 107, 0.25)",
