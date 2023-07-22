@@ -19,37 +19,49 @@
 
     <title>Frontend Mentor | PayAPI Website Challenge</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="script.js" defer></script>
   </head>
 
-  <body class="bg-creamy min-h-screen">
+  <body class="bg-creamy min-h-screen overflow-x-hidden mid:relative">
     <div>
       <header class="font-sans font-400 relative pt-16 overflow-hidden">
-        <div class="flex items-center gap-28 max-w-144 mx-auto px-24">
+        <div
+          class="flex items-center gap-28 max-w-144 mx-auto px-24 mlag:px-16 mid:justify-between sma:px-10 z-3 relative"
+        >
           <img src="assets/shared/desktop/logo.svg" alt="logo" />
-          <nav class="w-full">
-            <ul class="flex items-center gap-16">
+          <nav
+            class="w-full z-10 mid:fixed mid:bg-mirage-blue mid:top-0 mid:h-screen mid:right-0 mid:z-2 mid:w-3/4 mid:flex-col mid:items-end mid:py-4.5rem mid:px-12 mid:hidden main-nav mid:translate-x-full mid:opacity-0 mid:invisible transition-all duration-500"
+          >
+            <img
+              src="assets/shared/mobile/close.svg"
+              alt="close"
+              class="hidden mid:block mid:pb-8 nav-close"
+            />
+            <ul
+              class="flex items-center gap-16 mid:flex-col mid:border-t mid:border-link-water-white mid:border-opacity-20 mid:w-full mid:pt-8"
+            >
               <li>
                 <a
-                  href="#"
-                  class="block text-1.5rem text-sax-juan-blue opacity-70 leading-norm font-700 hover:opacity-100 transition-all duration-300"
+                  href="pricing.html"
+                  class="block text-1.5rem text-sax-juan-blue opacity-70 leading-norm font-700 hover:opacity-100 transition-all duration-300 mid:text-link-water-white"
                   >Pricing</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
-                  class="block text-1.5rem text-sax-juan-blue opacity-70 leading-norm font-700 hover:opacity-100 transition-all duration-300"
+                  href="about.html"
+                  class="block text-1.5rem text-sax-juan-blue opacity-70 leading-norm font-700 hover:opacity-100 transition-all duration-300 mid:text-link-water-white"
                   >About</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
-                  class="block text-1.5rem text-sax-juan-blue opacity-70 leading-norm font-700 hover:opacity-100 transition-all duration-300"
+                  href="contact.html"
+                  class="block text-1.5rem text-sax-juan-blue opacity-70 leading-norm font-700 hover:opacity-100 transition-all duration-300 mid:text-link-water-white"
                   >Contact</a
                 >
               </li>
-              <li class="ml-auto">
+              <li class="ml-auto mid:ml-0">
                 <a
                   href="#"
                   class="py-6 px-11 bg-dark-pink rounded-2.4rem block text-1.5rem text-link-water-white leading-norm font-700 hover:bg-charm-pink transition-all duration-300"
@@ -58,28 +70,33 @@
               </li>
             </ul>
           </nav>
+          <img
+            src="assets/shared/mobile/menu.svg"
+            alt="menu"
+            class="hidden mid:block nav-open z-2"
+          />
         </div>
         <section>
           <section
-            class="grid grid-cols-2 gap-12 items-center max-w-144 mx-auto px-24"
+            class="grid grid-cols-2 gap-12 items-center max-w-144 mx-auto px-24 lag:grid-cols-1 lag:pb-40 lag:gap-0 mlag:px-16 sma:px-10"
           >
-            <div class="flex flex-col gap-6">
+            <div class="flex flex-col gap-6 lag:items-center">
               <h1
-                class="text-sax-juan-blue font-serif text-7.2rem leading-7.2rem -tracking-0.0554rem pb-3"
+                class="text-sax-juan-blue font-serif text-7.2rem leading-7.2rem -tracking-0.0554rem pb-3 xlg:text-6.2rem lag:text-center mlag:text-4.8rem mlag:leading-5.6rem mlag:-tracking-0.0369rem sma:text-3.2rem mid:leading-3.6rem mid:-tracking-0.0246rem"
               >
                 Start building with our APIs for absolutely free.
               </h1>
               <div
-                class="flex items-center bg-white w-44rem rounded-2.4rem overflow-hidden"
+                class="flex items-center bg-white w-44rem rounded-2.4rem overflow-hidden shadow-def sma:flex-col sma:bg-transparent sma:shadow-none sma:gap-7 sma:w-full"
               >
                 <input
                   type="email"
                   placeholder="Enter email address"
-                  class="py-6 px-11 w-59% border-none outline-none text-1.5rem placeholder:text-1.5rem"
+                  class="py-6 px-11 w-59% border-none outline-none text-1.5rem placeholder:text-1.5rem sma:w-full sma:rounded-2.4rem sma:shadow-def"
                 />
                 <a
                   href="#"
-                  class="py-6 px-11 bg-dark-pink rounded-2.4rem block text-1.5rem text-link-water-white leading-norm font-700 hover:bg-charm-pink transition-all duration-300"
+                  class="py-6 px-11 bg-dark-pink rounded-2.4rem block text-1.5rem text-link-water-white leading-norm font-700 hover:bg-charm-pink transition-all duration-300 sma:w-full sma:text-center"
                   >Schedule a Demo</a
                 >
               </div>
@@ -88,29 +105,33 @@
                 <a href="contact.html" class="font-700 underline">Contact Us</a>
               </p>
             </div>
-            <div class="flex justify-center z-1">
+            <div
+              class="flex justify-center z-1 lag:row-span-full lag:h-52rem slag:h-40rem"
+            >
               <img
                 src="assets/home/desktop/illustration-phone-mockup.svg"
                 alt="phone mockup"
-                class=""
+                class="lag:pl-12"
               />
             </div>
           </section>
           <img
             src="assets/shared/desktop/bg-pattern-circle.svg"
             alt="circle"
-            class="absolute -top-80 -right-20"
+            class="absolute -top-80 -right-20 xxlg:-right-48 xlg:-right-96 lag:-top-45rem lag:right-48 mlag:right-24 slag:right-0 slag:-top-52rem mid:-top-40rem sma:-top-30rem xsma:-top-80 -z-1"
           />
         </section>
       </header>
       <main>
         <section class="relative bg-mirage-blue overflow-hidden">
           <section
-            class="max-w-144 mx-auto grid grid-cols-2 gap-x-52 items-center py-40 px-24"
+            class="max-w-144 mx-auto grid grid-cols-2 gap-x-52 items-center py-40 px-24 lag:grid-cols-1 mlag:px-16 mid:py-28 sma:px-10"
           >
-            <div class="flex flex-col gap-10 items-start z-1">
+            <div
+              class="flex flex-col gap-10 items-start z-1 lag:items-center lag:text-center"
+            >
               <h2
-                class="text-link-water-white font-serif text-4.8rem leading-5.6rem -tracking-0.0369rem"
+                class="text-link-water-white font-serif text-4.8rem leading-5.6rem -tracking-0.0369rem sma:text-3.2rem sma:leading-3.6rem sma:-tracking-0.0246rem"
               >
                 Who we work with
               </h2>
@@ -124,11 +145,13 @@
               </p>
               <a
                 href="about.html"
-                class="text-link-water-white text-1.5rem font-700 -tracking-0.0115rem leading-norm py-6 px-12 border border-link-water-white rounded-2.4rem block"
+                class="text-link-water-white text-1.5rem font-700 -tracking-0.0115rem leading-norm py-6 px-12 border border-link-water-white rounded-2.4rem block hover:text-mirage-blue hover:bg-link-water-white transition-all duration-300"
                 >About Us</a
               >
             </div>
-            <div class="grid grid-cols-3 items-center gap-x-24 gap-y-20">
+            <div
+              class="grid grid-cols-3 items-center gap-x-24 gap-y-20 lag:row-span-full lag:pb-28 justify-items-center mid:grid-cols-2"
+            >
               <svg class="h-7 w-52 fill-white">
                 <use xlink:href="assets/shared/desktop/tesla.svg#tesla"></use>
               </svg>
@@ -156,22 +179,25 @@
           <img
             src="assets/shared/desktop/bg-pattern-circle.svg"
             alt="circle"
-            class="absolute -top-35rem -left-30rem"
+            class="absolute -top-35rem -left-30rem lag:-top-52rem lag:left-16 mid:left-0 sma:-top-40rem xsma:-top-96"
           />
         </section>
         <section>
           <section
-            class="max-w-144 mx-auto px-24 grid grid-cols-2 items-center"
+            class="max-w-144 mx-auto px-24 grid grid-cols-2 items-center lag:grid-cols-1 lag:justify-items-center lag:pb-32 mlag:px-16 sma:pb-28 sma:pt-16 sma:px-10"
           >
-            <div>
+            <div class="flex justify-start lag:pl-12">
               <img
                 src="assets/home/desktop/illustration-easy-to-implement.svg"
                 alt="implement"
+                class="lag:w-52rem slag:w-40rem"
               />
             </div>
-            <div class="flex flex-col gap-10">
+            <div
+              class="flex flex-col gap-10 lag:text-center lag:items-center sma:-mt-12"
+            >
               <h2
-                class="text-sax-juan-blue font-serif text-4.8rem leading-5.6rem -tracking-0.0369rem"
+                class="text-sax-juan-blue font-serif text-4.8rem leading-5.6rem -tracking-0.0369rem sma:text-3.6rem sma:leading-3.6rem sma:-tracking-0.0277rem"
               >
                 Easy to implement
               </h2>
@@ -183,13 +209,15 @@
             </div>
           </section>
         </section>
-        <section class="relative overflow-y-hidden">
+        <section class="relative">
           <section
-            class="max-w-144 mx-auto grid grid-cols-2 items-center px-24"
+            class="max-w-144 mx-auto grid grid-cols-2 items-center px-24 pb-36 gap-32 lag:grid-cols-1 lag:justify-items-center lag:gap-0 mlag:px-16 sma:pb-32 sma:px-10"
           >
-            <div class="flex flex-col gap-10">
+            <div
+              class="flex flex-col gap-10 lag:items-center lag:text-center sma:-mt-12"
+            >
               <h2
-                class="text-sax-juan-blue font-serif text-4.8rem leading-5.6rem -tracking-0.0369rem"
+                class="text-sax-juan-blue font-serif text-4.8rem leading-5.6rem -tracking-0.0369rem sma:text-3.6rem sma:leading-3.6rem sma:-tracking-0.0277rem"
               >
                 Simple UI & UX
               </h2>
@@ -198,25 +226,28 @@
                 checkout flow and designed to optimize conversion.
               </p>
             </div>
-            <div class="z-1">
+            <div class="z-1 lag:row-span-full">
               <img
                 src="assets/home/desktop/illustration-simple-ui.svg"
                 alt="simple ui ux"
+                class="lag:h-52rem lag:pl-12 slag:h-40rem sma:h-35rem"
               />
             </div>
           </section>
           <img
             src="assets/shared/desktop/bg-pattern-circle.svg"
             alt="circle"
-            class="absolute -top-40 -right-35rem"
+            class="absolute -top-40 -right-35rem h-70rem w-70rem xlg:-right-45rem lag:hidden"
           />
         </section>
-        <section class="grid grid-cols-3">
+        <section
+          class="grid grid-cols-3 max-w-144 mx-auto px-24 gap-12 pb-40 mlag:px-16 slag:grid-cols-1 slag:gap-20 sma:pb-32 sma:px-10"
+        >
           <div class="flex flex-col gap-5 items-center text-center">
             <img
               src="assets/home/desktop/icon-personal-finances.svg"
               alt="finances"
-              class="pb-8"
+              class="pb-8 w-10.6rem h-10.6rem object-contain"
             />
             <h3
               class="text-1.8rem text-sax-juan-blue font-700 leading-2.5rem -tracking-0.0138rem"
@@ -231,14 +262,128 @@
               reconcile activities in your account.
             </p>
           </div>
+          <div class="flex flex-col gap-5 items-center text-center">
+            <img
+              src="assets/home/desktop/icon-banking-and-coverage.svg"
+              alt="Banking"
+              class="pb-8 w-10.6rem h-10.6rem object-contain"
+            />
+            <h3
+              class="text-1.8rem text-sax-juan-blue font-700 leading-2.5rem -tracking-0.0138rem"
+            >
+              Banking & Coverage
+            </h3>
+            <p
+              class="text-light-san-juan-blue text-1.5rem leading-2.5rem -tracking-0.0115rem"
+            >
+              With our platform, you can speed up account onboarding and support
+              ongoing payments for checking, savings, credit card, and brokerage
+              accounts.
+            </p>
+          </div>
+          <div class="flex flex-col gap-5 items-center text-center">
+            <img
+              src="assets/home/desktop/icon-consumer-payments.svg"
+              alt="Consumer"
+              class="pb-8 w-10.6rem h-10.6rem object-contain"
+            />
+            <h3
+              class="text-1.8rem text-sax-juan-blue font-700 leading-2.5rem -tracking-0.0138rem"
+            >
+              Consumer Payments
+            </h3>
+            <p
+              class="text-light-san-juan-blue text-1.5rem leading-2.5rem -tracking-0.0115rem"
+            >
+              It’s easier to set up secure bank payments with us through a flow
+              designed with the user experience in mind. Customers could
+              instantly authenticate their account.
+            </p>
+          </div>
+        </section>
+        <section
+          class="max-w-144 mx-auto flex items-center justify-between px-24 pb-40 lag:flex-col lag:gap-16 mlag:px-16 sma:pb-32 sma:px-10"
+        >
+          <h2
+            class="text-sax-juan-blue font-serif text-4.8rem leading-5.6rem -tracking-0.0369rem sma:text-3.2rem sma:leading-3.6rem sma:-tracking-0.0246rem"
+          >
+            Ready to start?
+          </h2>
+          <div
+            class="flex items-center bg-white w-44rem rounded-2.4rem overflow-hidden shadow-def sma:flex-col sma:bg-transparent sma:shadow-none sma:gap-7 sma:w-full"
+          >
+            <input
+              type="email"
+              placeholder="Enter email address"
+              class="py-6 px-11 w-59% border-none outline-none text-1.5rem placeholder:text-1.5rem sma:w-full sma:rounded-2.4rem sma:shadow-def"
+            />
+            <a
+              href="#"
+              class="py-6 px-11 bg-dark-pink rounded-2.4rem block text-1.5rem text-link-water-white leading-norm font-700 hover:bg-charm-pink transition-all duration-300 sma:w-full sma:text-center"
+              >Schedule a Demo</a
+            >
+          </div>
         </section>
       </main>
+      <footer class="bg-mirage-blue">
+        <header class="py-12 px-24 mlag:px-16 sma:px-10">
+          <div
+            class="flex items-center max-w-144 mx-auto px-24 mlag:px-16 mid:flex-col mid:gap-16 sma:px-10"
+          >
+            <svg class="fill-link-water-white w-80 h-16 mid:pl-8">
+              <use xlink:href="assets/shared/desktop/logo.svg#logo"></use>
+            </svg>
+            <nav class="">
+              <ul class="flex items-center gap-16 mid:flex-col">
+                <li>
+                  <a
+                    href="#"
+                    class="block text-1.5rem text-link-water-white opacity-70 leading-norm font-700 hover:opacity-100 transition-all duration-300"
+                    >Pricing</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block text-1.5rem text-link-water-white opacity-70 leading-norm font-700 hover:opacity-100 transition-all duration-300"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block text-1.5rem text-link-water-white opacity-70 leading-norm font-700 hover:opacity-100 transition-all duration-300"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div class="flex items-center gap-7 ml-auto mid:ml-0">
+              <svg
+                class="fill-link-water-white w-10 h-10 hover:fill-charm-pink transition-all duration-300 cursor-pointer"
+              >
+                <use
+                  xlink:href="assets/shared/desktop/facebook.svg#facebook"
+                ></use>
+              </svg>
+              <svg
+                class="fill-link-water-white w-10 h-8 hover:fill-charm-pink transition-all duration-300 cursor-pointer"
+              >
+                <use
+                  xlink:href="assets/shared/desktop/twitter.svg#twitter"
+                ></use>
+              </svg>
+              <svg
+                class="fill-link-water-white w-10 h-10 hover:fill-charm-pink transition-all duration-300 cursor-pointer"
+              >
+                <use
+                  xlink:href="assets/shared/desktop/linkedin.svg#linkedin"
+                ></use>
+              </svg>
+            </div>
+          </div>
+        </header>
+      </footer>
     </div>
-    Banking & Coverage With our platform, you can speed up account onboarding
-    and support ongoing payments for checking, savings, credit card, and
-    brokerage accounts. Consumer Payments It’s easier to set up secure bank
-    payments with us through a flow designed with the user experience in mind.
-    Customers could instantly authenticate their account. Ready to start? Enter
-    email address Schedule a / Pricing About Contact
   </body>
 </html>
