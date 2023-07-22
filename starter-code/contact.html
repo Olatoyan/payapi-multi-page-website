@@ -4,36 +4,93 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Public+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Frontend Mentor | PayAPI Website Challenge</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="script.js" defer></script>
   </head>
 
-  <body>
-    Pricing
-    About
-    Contact
-    Schedule a Demo
-
-    Submit a help request and we’ll get in touch shortly.
-    
-    Name
-    Email Address
-    Company Name
-    Title
-    Message
-    Stay up-to-date with company announcements and updates to our API
-    Submit
-
-    Join the thousands of innovators already building with us
-
-    Ready to start? 
-    Enter email address 
-    Schedule a Demo
-
-    Pricing
-    About
-    Contact
+  <body
+    class="bg-creamy min-h-screen overflow-x-hidden mid:relative font-sans font-400"
+  >
+    <div>
+      <header class="relative">
+        <div
+          class="flex items-center gap-28 max-w-144 mx-auto px-24 mid:px-16 xsma:px-8 mlag:px-16 mid:justify-between sma:px-10 z-3 relative pb-36 pt-16"
+        >
+          <a href="index.html">
+            <img src="assets/shared/desktop/logo.svg" alt="logo" />
+          </a>
+          <nav
+            class="w-full z-10 mid:fixed mid:bg-mirage-blue mid:top-0 mid:h-screen mid:right-0 mid:z-2 mid:w-3/4 mid:flex-col mid:items-end mid:py-4.5rem mid:px-12 mid:flex main-nav mid:translate-x-full mid:opacity-0 mid:invisible transition-all duration-500"
+          >
+            <img
+              src="assets/shared/mobile/close.svg"
+              alt="close"
+              class="hidden mid:block mid:pb-8 nav-close"
+            />
+            <ul
+              class="flex items-center gap-16 mid:flex-col mid:border-t mid:border-link-water-white mid:border-opacity-20 mid:w-full mid:pt-8"
+            >
+              <li>
+                <a
+                  href="pricing.html"
+                  class="block text-1.5rem text-sax-juan-blue opacity-70 leading-norm font-700 hover:opacity-100 transition-all duration-300 mid:text-link-water-white"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="block text-1.5rem text-sax-juan-blue opacity-70 leading-norm font-700 hover:opacity-100 transition-all duration-300 mid:text-link-water-white"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="block text-1.5rem text-sax-juan-blue opacity-70 leading-norm font-700 hover:opacity-100 transition-all duration-300 mid:text-link-water-white"
+                  >Contact</a
+                >
+              </li>
+              <li class="ml-auto mid:ml-0">
+                <a
+                  href="#"
+                  class="py-6 px-11 bg-dark-pink rounded-2.4rem block text-1.5rem text-link-water-white leading-norm font-700 hover:bg-charm-pink transition-all duration-300"
+                  >Schedule a Demo</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <img
+            src="assets/shared/mobile/menu.svg"
+            alt="menu"
+            class="hidden mid:block nav-open"
+          />
+        </div>
+        <img
+          src="assets/shared/desktop/bg-pattern-circle.svg"
+          alt="circle"
+          class="absolute -top-56rem -right-64 lag:-right-30rem slag:-right-50rem slag:-top-50rem mid:-top-40rem sma:-right-40rem xsma:-right-96 xsma:-top-35rem xsm:-top-96"
+        />
+      </header>
+    </div>
+    Pricing About Contact Schedule a Demo Submit a help request and we’ll get in
+    touch shortly. Name Email Address Company Name Title Message Stay up-to-date
+    with company announcements and updates to our API Submit Join the thousands
+    of innovators already building with us Ready to start? Enter email address
+    Schedule a Demo Pricing About Contact
   </body>
-
 </html>
