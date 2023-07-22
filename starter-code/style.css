@@ -11,7 +11,7 @@ html {
     background-color: #ba4270;
   }
   #checkbox:checked + label > div::before {
-    content: url(../assets/shared/desktop/icon-check.svg);
+    content: url(../assets/shared/desktop/icon-checked.svg);
     /* content: ""; */
     position: absolute;
     top: 28%;

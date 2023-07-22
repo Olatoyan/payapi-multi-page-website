@@ -1021,10 +1021,6 @@ video {
   padding-top: 4rem;
 }
 
-.pt-4 {
-  padding-top: 1rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -1035,6 +1031,10 @@ video {
 
 .font-serif {
   font-family: DM Serif Display, serif;
+}
+
+.text-1\.1rem {
+  font-size: 1.1rem;
 }
 
 .text-1\.5rem {
@@ -1067,10 +1067,6 @@ video {
 
 .text-7\.2rem {
   font-size: 7.2rem;
-}
-
-.text-1\.1rem {
-  font-size: 1.1rem;
 }
 
 .font-400 {
@@ -1164,14 +1160,14 @@ video {
   color: rgb(251 252 254 / var(--tw-text-opacity));
 }
 
-.text-sax-juan-blue {
-  --tw-text-opacity: 1;
-  color: rgb(54 83 107 / var(--tw-text-opacity));
-}
-
 .text-red {
   --tw-text-opacity: 1;
   color: rgb(255 0 0 / var(--tw-text-opacity));
+}
+
+.text-sax-juan-blue {
+  --tw-text-opacity: 1;
+  color: rgb(54 83 107 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1192,10 +1188,6 @@ video {
 
 .opacity-70 {
   opacity: 0.7;
-}
-
-.opacity-50 {
-  opacity: 0.5;
 }
 
 .shadow-def {
@@ -1233,7 +1225,7 @@ video {
 }
 
 #checkbox:checked + label > div::before {
-  content: url(../assets/shared/desktop/icon-check.svg);
+  content: url(../assets/shared/desktop/icon-checked.svg);
   /* content: ""; */
   position: absolute;
   top: 28%;
@@ -1679,6 +1671,10 @@ html {
     padding-bottom: 4.5rem;
   }
 
+  .mid\:pb-0 {
+    padding-bottom: 0px;
+  }
+
   .mid\:pb-8 {
     padding-bottom: 2rem;
   }
@@ -1689,14 +1685,6 @@ html {
 
   .mid\:pt-8 {
     padding-top: 2rem;
-  }
-
-  .mid\:pb-24 {
-    padding-bottom: 6rem;
-  }
-
-  .mid\:pb-0 {
-    padding-bottom: 0px;
   }
 
   .mid\:text-center {
@@ -1898,18 +1886,6 @@ html {
 @media (max-width: 28.75em) {
   .xsm\:-top-96 {
     top: -24rem;
-  }
-
-  .xsm\:h-12 {
-    height: 3rem;
-  }
-
-  .xsm\:h-16 {
-    height: 4rem;
-  }
-
-  .xsm\:w-12 {
-    width: 3rem;
   }
 
   .xsm\:w-16 {
