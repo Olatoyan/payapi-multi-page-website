@@ -23,71 +23,73 @@ const displayNav = function () {
 
 openNav.addEventListener("click", displayNav);
 closeNav.addEventListener("click", displayNav);
+const currentPageURL = window.location.href;
+if (currentPageURL.includes("contact.html")) {
+  submit.addEventListener("click", function (e) {
+    e.preventDefault();
 
-submit.addEventListener("click", function (e) {
-  e.preventDefault();
+    if (nameField.value.trim() === "") {
+      showErrorMessage(nameField);
+    } else {
+      hideErrorMessage(nameField);
+    }
 
-  if (nameField.value.trim() === "") {
-    showErrorMessage(nameField);
-  } else {
-    hideErrorMessage(nameField);
-  }
+    if (emailField.value.trim() === "") {
+      showErrorMessage(emailField);
+    } else {
+      hideErrorMessage(emailField);
+    }
 
-  if (emailField.value.trim() === "") {
-    showErrorMessage(emailField);
-  } else {
-    hideErrorMessage(emailField);
-  }
+    if (companyField.value.trim() === "") {
+      showErrorMessage(companyField);
+    } else {
+      hideErrorMessage(companyField);
+    }
 
-  if (companyField.value.trim() === "") {
-    showErrorMessage(companyField);
-  } else {
-    hideErrorMessage(companyField);
-  }
+    if (titleField.value.trim() === "") {
+      showErrorMessage(titleField);
+    } else {
+      hideErrorMessage(titleField);
+    }
 
-  if (titleField.value.trim() === "") {
-    showErrorMessage(titleField);
-  } else {
-    hideErrorMessage(titleField);
-  }
+    if (messageField.value.trim() === "") {
+      showErrorMessage(messageField);
+    } else {
+      hideErrorMessage(messageField);
+    }
+    if (!checkboxField.checked) {
+      showCheckboxErrorMessage();
+    } else {
+      hideCheckboxErrorMessage();
+    }
 
-  if (messageField.value.trim() === "") {
-    showErrorMessage(messageField);
-  } else {
-    hideErrorMessage(messageField);
-  }
-  if (!checkboxField.checked) {
-    showCheckboxErrorMessage();
-  } else {
-    hideCheckboxErrorMessage();
-  }
+    if (
+      nameField.value.trim() !== "" &&
+      emailField.value.trim() !== "" &&
+      companyField.value.trim() !== "" &&
+      titleField.value.trim() !== "" &&
+      messageField.value.trim() !== "" &&
+      checkboxField.checked
+    ) {
+      form.submit();
+    }
+  });
 
-  if (
-    nameField.value.trim() !== "" &&
-    emailField.value.trim() !== "" &&
-    companyField.value.trim() !== "" &&
-    titleField.value.trim() !== "" &&
-    messageField.value.trim() !== "" &&
-    checkboxField.checked
-  ) {
-    form.submit();
-  }
-});
+  const showErrorMessage = function (field) {
+    const errorLabel = field.nextElementSibling;
+    errorLabel.classList.remove("hidden");
+  };
 
-const showErrorMessage = function (field) {
-  const errorLabel = field.nextElementSibling;
-  errorLabel.classList.remove("hidden");
-};
+  const hideErrorMessage = function (field) {
+    const errorLabel = field.nextElementSibling;
+    errorLabel.classList.add("hidden");
+  };
 
-const hideErrorMessage = function (field) {
-  const errorLabel = field.nextElementSibling;
-  errorLabel.classList.add("hidden");
-};
+  const showCheckboxErrorMessage = function () {
+    checkboxError.classList.remove("hidden");
+  };
 
-const showCheckboxErrorMessage = function () {
-  checkboxError.classList.remove("hidden");
-};
-
-const hideCheckboxErrorMessage = function () {
-  checkboxError.classList.add("hidden");
-};
+  const hideCheckboxErrorMessage = function () {
+    checkboxError.classList.add("hidden");
+  };
+}
